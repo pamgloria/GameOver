@@ -1,0 +1,94 @@
+*{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Coustard', serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 143, 81);
+    
+}
+
+.background {
+    width: 83%;
+    
+    z-index: 1;
+    /*margin: 0 0 0 5%;*/
+}
+
+h1 {
+    color:rgb(221, 74, 226);
+    font-size: 100px;
+    -webkit-text-stroke: 1px rgb(111, 5, 249);
+}
+
+/*navbar starts*/
+a {
+    background-color: rgba(252, 0, 172, 0);
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgb(252, 0, 172);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(134, 232, 216);
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: rgb(176, 99, 224);
+    padding: 20px;
+    margin: 0 0 10px 0;
+}
+/*navbar ends*/
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    /*transform: translate(-50%, -50%);*/
+
+    /*animation*/
+    animation: grow 2s ease-in-out infinite
+    /*animation: drop 2s infinite,;
+        grow 2s 4s ease infinite,
+        colorize 1s infinite;*/
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(2);
+    }
+}
+
+/*@keyframes drop {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 300px;
+    }
+}*/
