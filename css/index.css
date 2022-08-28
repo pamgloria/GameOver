@@ -15,22 +15,22 @@ body {
 }
 
 .background {
-    width: 83%;
-    
+    width: 75%;
     z-index: 1;
     /*margin: 0 0 0 5%;*/
 }
 
 h1 {
-    color:rgb(221, 74, 226);
-    font-size: 100px;
-    -webkit-text-stroke: 1px rgb(111, 5, 249);
+    font-size: 65px;
+    color:aqua;
+    -webkit-text-stroke: 1px rgb(234, 89, 250);
 }
 
 /*navbar starts*/
 a {
     background-color: rgba(252, 0, 172, 0);
     padding: 10px;
+    font-size: 15px;
 }
 
 a:hover {
@@ -52,7 +52,7 @@ ul li {
 ul {
     list-style-type: none;
     background-color: rgb(176, 99, 224);
-    padding: 20px;
+    padding: 16px;
     margin: 0 0 10px 0;
 }
 /*navbar ends*/
@@ -69,7 +69,8 @@ ul {
     /*transform: translate(-50%, -50%);*/
 
     /*animation*/
-    animation: grow 2s ease-in-out infinite
+    animation: grow 2s ease-in-out infinite,
+        colorize 2s infinite;
     /*animation: drop 2s infinite,;
         grow 2s 4s ease infinite,
         colorize 1s infinite;*/
@@ -84,6 +85,18 @@ ul {
     }
 }
 
+@keyframes colorize {
+    0% {
+        color:aqua;
+        -webkit-text-stroke: 1px rgb(234, 89, 250);
+    }
+
+    50% {
+        color:rgb(244, 0, 252);
+        -webkit-text-stroke: 1px rgb(111, 5, 249);
+    }
+}
+
 /*@keyframes drop {
     0% {
         top: 0;
@@ -92,3 +105,40 @@ ul {
         top: 300px;
     }
 }*/
+
+@media only screen and (min-width: 1400px) {
+    .background {
+        width: 83%;
+        
+        z-index: 1;
+        /*margin: 0 0 0 5%;*/
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+/*navbar starts*/
+    a {
+        background-color: rgba(252, 0, 172, 0);
+        padding: 10px;
+    }
+    
+    a:hover {
+        background-color: rgb(252, 0, 172);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: rgb(134, 232, 216);
+    }
+        
+    ul {
+        list-style-type: none;
+        background-color: rgb(176, 99, 224);
+        padding: 20px;
+        margin: 0 0 10px 0;
+    }
+/*navbar ends*/
+}
