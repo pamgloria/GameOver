@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Over</title>
+    <link rel="icon" href="./images/heart-logo.png">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coustard:wght@900&family=Oleo+Script+Swash+Caps:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Press Start</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">????</a></li>
-            </ul>
-        </nav>
+    <!--navbar starts-->
+    <nav class="navbar">
+        <ul>
+            <li><a class="nav home" href="index.html">Home</a></li>
+            <li><a class="nav start" href="#">Press Start</a>
+                <ul class="dropdown">
+                    <li><a class="kitty" href="./html/kitty.html">Kitty Escape</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Ping Pong</a></li>
+                </ul>
+            </li>
+            <li><a class="nav about" href="#">About</a></li>
+            <li><a class="nav heart" href="#">♡</a></li>
+        </ul>
+    </nav>
+    <!--navbar ends-->
+   
     <main class="container">
         <img class="background" src="./images/full-background.png">
         <h1 class="title">Game Over</h1>

@@ -15,7 +15,6 @@ body {
 }
 
 .background {
-    width: 75%;
     z-index: 1;
     /*margin: 0 0 0 5%;*/
 }
@@ -27,13 +26,13 @@ h1 {
 }
 
 /*navbar starts*/
-a {
+/*a {
     background-color: rgba(252, 0, 172, 0);
     padding: 10px;
     font-size: 15px;
 }
 
-a:hover {
+.navbar ul li:hover a {
     background-color: rgb(252, 0, 172);
     border-radius: 20px;
     padding: 10px;
@@ -42,9 +41,11 @@ a:hover {
 ul li a{
     text-decoration: none;
     color: rgb(134, 232, 216);
+
+    transition: all 0.3s;
 }
 
-ul li {
+.navbar > ul > li {
     display: inline-block;
 }
 
@@ -55,6 +56,81 @@ ul {
     padding: 16px;
     margin: 0 0 10px 0;
 }
+
+.navbar ul ul {
+    position:absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top: 5%;
+    left:7%;
+}
+
+.navbar ul li:hover > ul {
+    display:block;
+}*/
+
+
+.navbar {
+    /*background:rgb(111, 5, 249);*/
+    background: rgb(144, 9, 228);
+}
+
+.navbar:after:after {
+    content: '';
+    clear:both;
+    display: block;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.navbar > ul >li {
+    display: inline-block;
+    position:relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(134, 232, 216);
+    padding: 15px 20px;
+    display: block;
+    margin: 0;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+.navbar ul li:hover a {
+    background:rgb(244, 0, 252);
+    
+}
+
+.navbar ul ul {
+    position:absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    z-index: 2;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.navbar .dropdown ul li a {
+    background-color: blue;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.kitty {
+    font-size: 14px;
+}
+
 /*navbar ends*/
 
 .container {
@@ -106,6 +182,12 @@ ul {
     }
 }*/
 
+@media (min-width:900px) {
+    .background {
+        width:75%;
+    }
+}
+
 @media only screen and (min-width: 1400px) {
     .background {
         width: 83%;
@@ -118,7 +200,7 @@ ul {
         font-size: 100px;
     }
 /*navbar starts*/
-    a {
+    /*a {
         background-color: rgba(252, 0, 172, 0);
         padding: 10px;
     }
@@ -139,6 +221,6 @@ ul {
         background-color: rgb(176, 99, 224);
         padding: 20px;
         margin: 0 0 10px 0;
-    }
+    }*/
 /*navbar ends*/
 }
