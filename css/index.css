@@ -100,7 +100,7 @@ ul {
     display: block;
     margin: 0;
     transition: all 0.3s;
-    border-radius: 20px;
+    
 }
 
 .navbar ul li:hover a {
@@ -111,7 +111,7 @@ ul {
 .navbar ul ul {
     position:absolute;
     padding: 0;
-    min-width: 160px;
+    /*min-width: 160px;*/
     display: none;
     top: 100%;
     z-index: 2;
@@ -125,7 +125,13 @@ ul {
 
 .navbar ul li:hover > ul {
     display: block;
+    /**/
 }
+
+.navbar ul li li:hover > a {
+    background:rgb(252, 186, 3);
+}
+
 
 .kitty {
     font-size: 14px;
